@@ -44,8 +44,12 @@ if (lengthEntry < passwordMinLength || lengthEntry > passwordMaxLength) {
 
 //This function will generat eht password and retunr it to the correct password
 function generatePassword() {
-  prompt("How many characters is in your password? (8-128 characters)")
-  )
+  input = Number(
+    prompt("Please enter how many characters your password is. (8-128 characters)")
+  );
+  if (!input) {
+    alert("You need to have a password length.");
+  }
   return password;//predefined password
 }
 
