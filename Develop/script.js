@@ -53,6 +53,9 @@ function generatePassword() {
   //Has 4 -
   else if (!hasLowerCase && !hasUpperCase && !hasNumbers && !hasSpecial) {
     alert(`You must choose a criteria`);
+    //  let refreshBtn = document.addEventListener
+    //  function timeRefresh(time) {
+    //    setTimeout("location.reload(true);", time)
   }
   else if (!hasLowerCase && hasUpperCase && hasNumbers && hasSpecial) { choices = characters.upperCase.concat(characters.numbers, characters.special); }
   else if (hasLowerCase && !hasUpperCase && hasNumbers && hasSpecial) { choices = characters.lowerCase.concat(characters.upperCase, characters.special); }
